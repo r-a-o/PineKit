@@ -1,6 +1,0 @@
-framework module PineKit {
-  umbrella header "PineKit-umbrella.h"
-
-  export *
-  module * { export * }
-}

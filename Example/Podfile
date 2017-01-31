@@ -1,15 +1,22 @@
 source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+inhibit_all_warnings!
+
+xcodeproj 'PineKit'
 use_frameworks!
 
-target 'PineKit_Example', :exclusive => true do
-  pod 'PineKit', :path => '../'
-end
+#target 'PineKit_Example', :exclusive => true do
+# pod 'PineKit', :path => '../'
+#end
 
-target 'PineKit_Tests', :exclusive => true do
-  pod 'PineKit', :path => '../'  
-end
+  #target 'PineKit_Tests', :exclusive => true do
+    #  pod 'PineKit', :path => '../'
+  #end
 
-pod 'SnapKit', '~> 0.15.0'
-pod 'DLRadioButton', '~> 1.4'
-pod 'SwiftyJSON', '~> 2.3.1'
-pod 'Alamofire', '~> 3.3'
+target 'PineKit_Tests' do
+    pod 'PineKit', :path => '../'
+    pod 'SnapKit', '~> 3.1.2' #'~> 0.15.0'
+    pod 'DLRadioButton', '~> 1.4'
+    pod 'SwiftyJSON', '~> 3.1.4' #'~> 2.3.1'
+    pod 'Alamofire', '~> 4.3' #'~> 3.3'
+end
